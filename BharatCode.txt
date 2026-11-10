@@ -1,0 +1,26 @@
+﻿BharatForge — GitHub Issue Intelligence
+Built for BharatCode Build League 2026.
+
+BharatCode powers all live LLM inference: issue classification and summaries,
+severity/impact/clarity estimates, duplicate pair review, and sample backlog overview.
+No other inference provider is used. The OpenAI Python SDK is a transport client
+configured exclusively for BharatCode's documented OpenAI-compatible API.
+
+Official documentation inspected 2026-11-11:
+https://bharatcode.ai/build
+https://bharatcode.ai/hackathon
+
+Endpoint: https://bharatcode.ai/api/model/v1
+Model: configured through BHARATCODE_MODEL; default qwen-3.8-27b.
+Authentication: server-side BHARATCODE_API_KEY, bearer token.
+
+Organizer requirement verified: a public GitHub repository with BharatCode.txt
+in the root of its default branch. The public page does not prescribe file
+contents. These are project-authored contents, not an organizer template.
+Before submission, check the signed-in submission form for any additional fields
+or attribution instructions. Public publication and submission are not performed
+by this local build. Verify the current round deadline with the organizer.
+
+Development verification: mocked API tests and a synthetic offline demo.
+Live authenticated BharatCode inference has not been verified without credentials.
+Demo results are explicitly marked as synthetic and do not use model inference.
