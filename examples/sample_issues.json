@@ -1,0 +1,482 @@
+{
+  "schema_version": "1.0",
+  "mode": "demo",
+  "generated_at": "2026-11-01T12:00:00+00:00",
+  "repository": {
+    "full_name": "bharatforge-demo/triage-lab",
+    "description": "Synthetic issue backlog for the BharatForge demo. Not a real repository.",
+    "stars": 128,
+    "open_items": 42,
+    "url": "https://github.com/bharatforge-demo/triage-lab"
+  },
+  "issues": [
+    {
+      "issue": {
+        "number": 101,
+        "title": "Export crashes when CSV contains emoji",
+        "body": "Export crashes when CSV contains emoji. Steps: upload a CSV with emoji, click Export. Expected: download. Actual: TypeError in serializer. Version 1.4, Linux.",
+        "labels": [
+          "bug"
+        ],
+        "created_at": "2026-10-02T12:00:00+00:00",
+        "updated_at": "2026-11-01T12:00:00+00:00",
+        "comments": 2,
+        "url": "https://github.com/bharatforge-demo/triage-lab/issues/101",
+        "truncated": false
+      },
+      "analysis": {
+        "number": 101,
+        "category": "bug",
+        "severity": "high",
+        "summary": "A reported export crash affects CSV data containing emoji.",
+        "impact": 85.0,
+        "reproducibility": 90.0,
+        "confidence": 0.82,
+        "observed_facts": [
+          "Export crashes when CSV contains emoji"
+        ],
+        "inferred_conclusions": [
+          "Maintainer review is needed to confirm scope and impact."
+        ],
+        "missing_information": [
+          "Stack trace"
+        ],
+        "suggested_action": "Reproduce the emoji export path and inspect serializer encoding.",
+        "evidence": [
+          "Export crashes when CSV contains emoji"
+        ]
+      },
+      "priority": {
+        "score": 74.92,
+        "severity": 75.0,
+        "impact": 85.0,
+        "reproducibility": 90.0,
+        "age": 16.666666666666664
+      }
+    },
+    {
+      "issue": {
+        "number": 102,
+        "title": "CSV export fails with emoji characters",
+        "body": "CSV export crashes when CSV contains emoji. Upload a CSV with emoji then click Export. TypeError in serializer. Version 1.4, Linux.",
+        "labels": [
+          "bug"
+        ],
+        "created_at": "2026-10-07T12:00:00+00:00",
+        "updated_at": "2026-11-01T12:00:00+00:00",
+        "comments": 2,
+        "url": "https://github.com/bharatforge-demo/triage-lab/issues/102",
+        "truncated": false
+      },
+      "analysis": {
+        "number": 102,
+        "category": "bug",
+        "severity": "high",
+        "summary": "A second report describes the same emoji export failure.",
+        "impact": 80.0,
+        "reproducibility": 85.0,
+        "confidence": 0.82,
+        "observed_facts": [
+          "CSV export crashes when CSV contains emoji"
+        ],
+        "inferred_conclusions": [
+          "Maintainer review is needed to confirm scope and impact."
+        ],
+        "missing_information": [
+          "Minimal CSV attachment"
+        ],
+        "suggested_action": "Compare with issue #101 before investigating separately.",
+        "evidence": [
+          "CSV export crashes when CSV contains emoji"
+        ]
+      },
+      "priority": {
+        "score": 72.14,
+        "severity": 75.0,
+        "impact": 80.0,
+        "reproducibility": 85.0,
+        "age": 13.88888888888889
+      }
+    },
+    {
+      "issue": {
+        "number": 103,
+        "title": "Add keyboard shortcuts to search",
+        "body": "Feature request: press slash to focus repository search. This would save repeated mouse clicks during triage.",
+        "labels": [
+          "feature"
+        ],
+        "created_at": "2026-09-02T12:00:00+00:00",
+        "updated_at": "2026-11-01T12:00:00+00:00",
+        "comments": 2,
+        "url": "https://github.com/bharatforge-demo/triage-lab/issues/103",
+        "truncated": false
+      },
+      "analysis": {
+        "number": 103,
+        "category": "feature",
+        "severity": "low",
+        "summary": "A maintainer requests a keyboard shortcut for search.",
+        "impact": 45.0,
+        "reproducibility": 80.0,
+        "confidence": 0.82,
+        "observed_facts": [
+          "Feature request: press slash to focus repository search"
+        ],
+        "inferred_conclusions": [
+          "Maintainer review is needed to confirm scope and impact."
+        ],
+        "missing_information": [
+          "Accessibility requirements"
+        ],
+        "suggested_action": "Discuss shortcut conflicts and keyboard accessibility.",
+        "evidence": [
+          "Feature request: press slash to focus repository search"
+        ]
+      },
+      "priority": {
+        "score": 41.08,
+        "severity": 25.0,
+        "impact": 45.0,
+        "reproducibility": 80.0,
+        "age": 33.33333333333333
+      }
+    },
+    {
+      "issue": {
+        "number": 104,
+        "title": "Quickstart uses an outdated config name",
+        "body": "The quickstart says API_TOKEN but version 1.4 expects SERVICE_TOKEN. New installations fail until I rename the variable.",
+        "labels": [
+          "documentation"
+        ],
+        "created_at": "2026-10-22T12:00:00+00:00",
+        "updated_at": "2026-11-01T12:00:00+00:00",
+        "comments": 2,
+        "url": "https://github.com/bharatforge-demo/triage-lab/issues/104",
+        "truncated": false
+      },
+      "analysis": {
+        "number": 104,
+        "category": "documentation",
+        "severity": "medium",
+        "summary": "The quickstart reportedly documents the wrong environment variable.",
+        "impact": 65.0,
+        "reproducibility": 85.0,
+        "confidence": 0.82,
+        "observed_facts": [
+          "The quickstart says API_TOKEN but version 1.4 expects SERVICE_TOKEN"
+        ],
+        "inferred_conclusions": [
+          "Maintainer review is needed to confirm scope and impact."
+        ],
+        "missing_information": [
+          "Documentation page URL"
+        ],
+        "suggested_action": "Verify the variable name and update the quickstart example.",
+        "evidence": [
+          "The quickstart says API_TOKEN but version 1.4 expects SERVICE_TOKEN"
+        ]
+      },
+      "priority": {
+        "score": 56.06,
+        "severity": 50.0,
+        "impact": 65.0,
+        "reproducibility": 85.0,
+        "age": 5.555555555555555
+      }
+    },
+    {
+      "issue": {
+        "number": 105,
+        "title": "Is self-hosted deployment supported?",
+        "body": "Can I deploy this tool on an internal network? I cannot find a self-hosting guide.",
+        "labels": [
+          "question"
+        ],
+        "created_at": "2026-10-27T12:00:00+00:00",
+        "updated_at": "2026-11-01T12:00:00+00:00",
+        "comments": 2,
+        "url": "https://github.com/bharatforge-demo/triage-lab/issues/105",
+        "truncated": false
+      },
+      "analysis": {
+        "number": 105,
+        "category": "question",
+        "severity": "low",
+        "summary": "A user asks about deployment on an internal network.",
+        "impact": 30.0,
+        "reproducibility": 60.0,
+        "confidence": 0.82,
+        "observed_facts": [
+          "Can I deploy this tool on an internal network? I cannot find a self-hosting guide."
+        ],
+        "inferred_conclusions": [
+          "Maintainer review is needed to confirm scope and impact."
+        ],
+        "missing_information": [
+          "Deployment constraints"
+        ],
+        "suggested_action": "Clarify hosting requirements and point to deployment documentation.",
+        "evidence": [
+          "Can I deploy this tool on an internal network? I cannot find a self-hosting guide."
+        ]
+      },
+      "priority": {
+        "score": 29.78,
+        "severity": 25.0,
+        "impact": 30.0,
+        "reproducibility": 60.0,
+        "age": 2.7777777777777777
+      }
+    },
+    {
+      "issue": {
+        "number": 106,
+        "title": "Upgrade dependency audit workflow",
+        "body": "Our dependency audit workflow uses an old action version. Please review the current supported version and pin the commit SHA.",
+        "labels": [
+          "maintenance"
+        ],
+        "created_at": "2026-08-03T12:00:00+00:00",
+        "updated_at": "2026-11-01T12:00:00+00:00",
+        "comments": 2,
+        "url": "https://github.com/bharatforge-demo/triage-lab/issues/106",
+        "truncated": false
+      },
+      "analysis": {
+        "number": 106,
+        "category": "maintenance",
+        "severity": "low",
+        "summary": "A workflow maintenance request asks for a dependency audit action update.",
+        "impact": 40.0,
+        "reproducibility": 65.0,
+        "confidence": 0.82,
+        "observed_facts": [
+          "Our dependency audit workflow uses an old action version"
+        ],
+        "inferred_conclusions": [
+          "Maintainer review is needed to confirm scope and impact."
+        ],
+        "missing_information": [
+          "Current action version"
+        ],
+        "suggested_action": "Review the action release notes and pin a reviewed commit.",
+        "evidence": [
+          "Our dependency audit workflow uses an old action version"
+        ]
+      },
+      "priority": {
+        "score": 38.75,
+        "severity": 25.0,
+        "impact": 40.0,
+        "reproducibility": 65.0,
+        "age": 50.0
+      }
+    },
+    {
+      "issue": {
+        "number": 107,
+        "title": "Search times out with 100k records",
+        "body": "Search times out with 100k records after about 30 seconds. Dataset has 100k rows. I have not captured logs. This blocks our weekly triage.",
+        "labels": [
+          "bug"
+        ],
+        "created_at": "2026-10-17T12:00:00+00:00",
+        "updated_at": "2026-11-01T12:00:00+00:00",
+        "comments": 2,
+        "url": "https://github.com/bharatforge-demo/triage-lab/issues/107",
+        "truncated": false
+      },
+      "analysis": {
+        "number": 107,
+        "category": "bug",
+        "severity": "high",
+        "summary": "A large dataset reportedly triggers a search timeout.",
+        "impact": 75.0,
+        "reproducibility": 55.0,
+        "confidence": 0.82,
+        "observed_facts": [
+          "Search times out with 100k records after about 30 seconds"
+        ],
+        "inferred_conclusions": [
+          "Maintainer review is needed to confirm scope and impact."
+        ],
+        "missing_information": [
+          "Server logs",
+          "Hardware",
+          "Minimal dataset"
+        ],
+        "suggested_action": "Request logs and profile search on a comparable large dataset.",
+        "evidence": [
+          "Search times out with 100k records after about 30 seconds"
+        ]
+      },
+      "priority": {
+        "score": 65.33,
+        "severity": 75.0,
+        "impact": 75.0,
+        "reproducibility": 55.0,
+        "age": 8.333333333333332
+      }
+    },
+    {
+      "issue": {
+        "number": 108,
+        "title": "Add JSON report export",
+        "body": "We need a JSON report export so our nightly automation can read triage results without parsing Markdown.",
+        "labels": [
+          "feature"
+        ],
+        "created_at": "2026-09-22T12:00:00+00:00",
+        "updated_at": "2026-11-01T12:00:00+00:00",
+        "comments": 2,
+        "url": "https://github.com/bharatforge-demo/triage-lab/issues/108",
+        "truncated": false
+      },
+      "analysis": {
+        "number": 108,
+        "category": "feature",
+        "severity": "medium",
+        "summary": "An automation workflow needs a machine-readable export.",
+        "impact": 60.0,
+        "reproducibility": 80.0,
+        "confidence": 0.82,
+        "observed_facts": [
+          "We need a JSON report export so our nightly automation can read triage results without parsing Markdown."
+        ],
+        "inferred_conclusions": [
+          "Maintainer review is needed to confirm scope and impact."
+        ],
+        "missing_information": [
+          "Required JSON schema"
+        ],
+        "suggested_action": "Agree a versioned export schema with the requester.",
+        "evidence": [
+          "We need a JSON report export so our nightly automation can read triage results without parsing Markdown."
+        ]
+      },
+      "priority": {
+        "score": 55.22,
+        "severity": 50.0,
+        "impact": 60.0,
+        "reproducibility": 80.0,
+        "age": 22.22222222222222
+      }
+    },
+    {
+      "issue": {
+        "number": 109,
+        "title": "Empty result screen has no guidance",
+        "body": "When search has zero matches, I only see a blank panel. Please show a message and a clear filters action.",
+        "labels": [
+          "feature"
+        ],
+        "created_at": "2026-10-30T12:00:00+00:00",
+        "updated_at": "2026-11-01T12:00:00+00:00",
+        "comments": 2,
+        "url": "https://github.com/bharatforge-demo/triage-lab/issues/109",
+        "truncated": false
+      },
+      "analysis": {
+        "number": 109,
+        "category": "feature",
+        "severity": "low",
+        "summary": "An empty search result screen reportedly lacks guidance.",
+        "impact": 35.0,
+        "reproducibility": 90.0,
+        "confidence": 0.82,
+        "observed_facts": [
+          "When search has zero matches, I only see a blank panel"
+        ],
+        "inferred_conclusions": [
+          "Maintainer review is needed to confirm scope and impact."
+        ],
+        "missing_information": [],
+        "suggested_action": "Add an empty-state message with a filter reset action.",
+        "evidence": [
+          "When search has zero matches, I only see a blank panel"
+        ]
+      },
+      "priority": {
+        "score": 35.86,
+        "severity": 25.0,
+        "impact": 35.0,
+        "reproducibility": 90.0,
+        "age": 1.1111111111111112
+      }
+    },
+    {
+      "issue": {
+        "number": 110,
+        "title": "Login intermittently returns 500",
+        "body": "Login intermittently returns 500. It happened twice today on version 1.4. I cannot reproduce consistently and have no server logs.",
+        "labels": [
+          "bug"
+        ],
+        "created_at": "2026-10-25T12:00:00+00:00",
+        "updated_at": "2026-11-01T12:00:00+00:00",
+        "comments": 2,
+        "url": "https://github.com/bharatforge-demo/triage-lab/issues/110",
+        "truncated": false
+      },
+      "analysis": {
+        "number": 110,
+        "category": "bug",
+        "severity": "high",
+        "summary": "An intermittent login failure is reported with limited diagnostics.",
+        "impact": 80.0,
+        "reproducibility": 25.0,
+        "confidence": 0.82,
+        "observed_facts": [
+          "Login intermittently returns 500"
+        ],
+        "inferred_conclusions": [
+          "Maintainer review is needed to confirm scope and impact."
+        ],
+        "missing_information": [
+          "Server logs",
+          "Request ID",
+          "Authentication method"
+        ],
+        "suggested_action": "Request a redacted request ID and server logs before narrowing the cause.",
+        "evidence": [
+          "Login intermittently returns 500"
+        ]
+      },
+      "priority": {
+        "score": 62.14,
+        "severity": 75.0,
+        "impact": 80.0,
+        "reproducibility": 25.0,
+        "age": 3.888888888888889
+      }
+    }
+  ],
+  "duplicates": [
+    {
+      "first": 101,
+      "second": 102,
+      "similarity": 0.83,
+      "verdict": {
+        "same_problem": true,
+        "reason": "Both synthetic reports describe emoji CSV export failure with the same serializer error.",
+        "confidence": 0.94
+      }
+    }
+  ],
+  "overview": {
+    "summary": "This synthetic sample highlights export reliability, search performance, and triage workflow improvements.",
+    "observations": [
+      "Two export reports may share a root cause; review them together.",
+      "Login and search reports need more diagnostic context before a fix can be scoped.",
+      "Correcting the quickstart variable name could reduce setup friction."
+    ]
+  },
+  "warnings": [
+    "All source data and AI judgments in this demo are synthetic. No API requests were made."
+  ],
+  "request_count": 0,
+  "latency_seconds": 0.0,
+  "model": "mock / bundled demo"
+}
